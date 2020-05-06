@@ -1,0 +1,12 @@
+texto1 = input("Nombre: ")
+texto2 = input("Apellido: ")
+
+texto1_lista = list(texto1)
+texto2_lista = list(texto2)
+
+texto1_1=texto1_lista[0]
+texto1_lista[0] = texto2_lista[0]
+texto2_lista[0] = texto1_1
+n = "".join(texto1_lista)
+a = "".join(texto2_lista)
+print(n + " " + a)
